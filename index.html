@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		* {
+			font-family: 'Open Sans', sans-serif;
+			font-style: normal;
+    		font-weight: 400;
+		}
+		.over-lay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 99;
+			width: 100%;
+			height: 100%;
+		    background: rgba(0, 0, 0, 0.5);
+		}
+		.check-wrapper {
+			position: fixed;
+			z-index: 100;
+			width: 400px;
+		    height: 565px;
+			background: #fff;
+			left: 37%;
+    		top: 50px;
+    		border-radius: 4px;
+		    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.43);
+		}
+		.check-wrapper .check {
+			margin: 0 auto;
+			width:  360px;
+			padding-top: 20px;
+		}
+		.check-wrapper .check img {
+			width: 300px;
+		    display: block;
+    		margin: 0 auto;
+		}
+		.check-wrapper .check span {
+			display: block;
+    		text-align: center;
+		}
+		.check-wrapper .check .welcome {
+
+		}
+		.check-wrapper .check .intention {
+			color: #717171;
+			text-align: justify;
+		}
+		.check-wrapper .check .title {
+		    font-size: 2.5em;
+		    text-transform: uppercase;
+		    font-weight: 700;
+		    color: #484848;
+		    text-shadow: 0 2px 1px #969696;
+		}
+		.selection {
+			margin-top: 20px;
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.selection .over18 ,.selection .under18 {
+			padding: 10px;
+			background: #F3F3F3;
+			border: 1px solid #ABABAB;
+			font-weight: 600;
+		    color: #444444;
+		}
+		.selection .over18 i ,.selection .under18 i {
+			margin-left: 5px;
+		}
+		.selection .over18 {
+			margin-bottom: -1px;
+			-webkit-transition: all 0.2s ease;
+		}
+		.selection .under18 {
+			-webkit-transition: all 0.2s ease;
+		}
+		.selection .over18:hover {
+		    background: #ECC640;
+			cursor: pointer;
+		}
+		.selection .under18:hover {
+		    background: #F37474;
+			cursor: pointer;
+		}
+		.copyright {
+			text-align: center; 
+			margin-top: 30px;
+			font-size: 0.8em;
+			color: #C1C1C1;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="check-wrapper">
+		<div class="check">
+			<div>
+				<span class="welcome">Welcome to</span>
+				<span class="title">King David PH</span>
+					<img src="http://store.staging.shop.esh.ph/skin/frontend/rb/default/images/logo.png">
+				<span class="intention"><b>King David PH</b> make sure that our product will only be sold to people of legal smoking check. Please verify your age to proceed.</span>
+			</div>
+			<div class="selection">
+				<div class="over18">
+					Yes, I am over 18 <i class="fa fa-thumbs-up"></i>
+				</div>
+				<div class="under18">
+					Oops! Im outta here! <i class="fa fa-frown-o"></i>
+				</div>
+			</div>
+			<div class="copyright">
+				&#169;  KING DAVID PH 2015
+			</div>
+		</div>
+	</div>
+	<div class="over-lay"></div>
+</body>
+</html>
